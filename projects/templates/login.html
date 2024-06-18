@@ -1,0 +1,152 @@
+{% load static %}
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Bootstrap Login Form</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+
+    <style>
+      .detail {display: none;}
+      .selengkapnya, .hide {cursor: pointer; color: brown;}
+      body {
+          background-color: #f0f9ed; /* Light green background */
+          font-family: Arial, sans-serif;
+      }
+      .login-container {
+          margin-top: 100px;
+          padding: 30px;
+          background-color: #ffffff;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          border-radius: 10px;
+      }
+      .login-header {
+          margin-bottom: 30px;
+          color: #28a745;
+          font-weight: bold;
+      }
+      .form-control {
+          border-radius: 20px;
+          border: 1px solid #28a745;
+      }
+      .form-control:focus {
+          box-shadow: none;
+          border-color: #28a745;
+      }
+      .btn-custom {
+          background-color: #28a745;
+          border-color: #28a745;
+          border-radius: 20px;
+          font-size: 16px;
+          font-weight: bold;
+          padding: 10px 20px;
+          color: #ffffff;
+      }
+      .btn-custom:hover {
+          background-color: #218838;
+          border-color: #218838;
+      }
+      .text-muted a {
+          color: #28a745;
+          text-decoration: none;
+      }
+      .text-muted a:hover {
+          color: #218838;
+          text-decoration: underline;
+      }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="login-container">
+                    <h2 class="text-center login-header">Login Form</h2>
+                    <form action="" method="post">
+                      {% csrf_token %}
+                        <div class="form-group">
+                            <label for="username">Username / Email</label>
+                            <input type="text" name="email" class="form-control" id="username" placeholder="Enter username / email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" class="form-control" id="password" placeholder="Enter password">
+                        </div>
+                        <button type="submit" class="btn btn-custom btn-block mt-4">Login</button>
+                        <div class="text-center mt-3">
+                            <a href="#" class="text-muted">Forgot password?</a>
+                        </div>
+                        <div class="text-center mt-3">
+                            <p class="text-muted">Don't have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign up</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signUpModalLabel">Sign Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Nama</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="nik">NIK</label>
+                            <input type="text" class="form-control" id="nik" placeholder="Enter your NIK">
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Alamat</label>
+                            <input type="text" class="form-control" id="address" placeholder="Enter your address">
+                        </div>
+                        <div class="form-group">
+                            <label for="occupation">Pekerjaan</label>
+                            <input type="text" class="form-control" id="occupation" placeholder="Enter your occupation">
+                        </div>
+                        <div class="form-group">
+                            <label for="birthdate">Tanggal Lahir</label>
+                            <input type="date" class="form-control" id="birthdate">
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Jenis Kelamin</label>
+                            <select class="form-control" id="gender">
+                                <option value="">Select gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="status">Status</label>
+                            <select class="form-control" id="status">
+                                <option value="">Select status</option>
+                                <option value="single">Single</option>
+                                <option value="married">Married</option>
+                                <option value="divorced">Divorced</option>
+                                <option value="widowed">Widowed</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-custom">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

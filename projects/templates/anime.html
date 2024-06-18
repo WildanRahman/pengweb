@@ -1,0 +1,38 @@
+{% load static %}
+{% include 'header.html' %}
+
+    <!-- Content Start-->
+    <div class="container-fluid text-left bg-body-secondary bg-opacity-50" style="min-height: 500px;">
+        <div class="row">
+            <div class="fs-1">{{kategori}}</div>
+
+            {% for r in data %}
+            <div class="col-lg-4-col-md-12">
+                <img src="assets/{{r.gambar}}" class="img-thumbnail">
+                <a href ="detail/{{r.id}}"> <h6>{{r.judul}}</h6></a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <!--Content Finish-->
+
+    <!-- Iklan Start-->
+    <div class="container-fluid text-center bg-success-subtle blur">
+        <div class="row">
+          <div class="col">
+            <img src="/static/assets/images/Iklan1.jpg" alt="iklan1" width="300px" height="auto" class="img-thumbnail">
+          </div>
+          <div class="col">
+            <img src="/static/assets/images/Iklan2.jpg" alt="iklan2" width="300px" height="auto" class="img-thumbnail">
+          </div>
+          <div class="col">
+            <img src="/static/assets/images/Iklan3.jpg" alt="iklan3" width="auto" height="300px" class="img-thumbnail">
+          </div>
+          <div class="col">
+            <img src="/static/assets/images/Iklan4.jpg" alt="iklan4" width="300px" height="auto" class="img-thumbnail">
+          </div>
+        </div>
+      </div>
+    <!-- Iklan Finish-->
+
+{% include 'footer.html' %}

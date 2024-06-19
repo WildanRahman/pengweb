@@ -2,54 +2,110 @@
 {% load static %}
 
 {% include 'header.html' %}
-
+<style>
+  .custom-box {
+      width: 40%;
+      margin: 0 auto;
+      border-radius: 10px;
+  }
+  .featurette-heading {
+      font-size: 2.5rem; /* Adjust the size as needed */
+      font-weight: bold;
+  }
+  .text-muted {
+      color: #6c757d !important; /* Bootstrap's muted color */
+  }
+  .featurette-container {
+      width: 70%;
+      margin: 0 auto;
+        }
+</style>
         <!-- Content Start-->
-        <div class="container-fluid mt-8 text-center" style="min-height:300px;">
-            <div class="row">
-              <div class="col-lg-3 g-col-md-12">
-                <img src="/static/assets/images/Eps 1097.jpg" alt="EPS 1097" class="img-fluid">
-                <p class="fw-semibold">"Episode 1097: The Will of Ohara! The Inherited Research" <br></p>
+        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center custom-box">
+          <h1 class="display-4">Whats diz?</h1>
+          <p class="lead"><strong>Telcomedy</strong> adalah web untuk submission meme kawan kawan telkom yang suka hal lucu-lucu, siapa yang berkomendi? tentu membernya, masa iya kampusnya</p>
+      </div>
+         <!-- Container fluid dengan class mt-8 untuk margin-top -->
+<div class="container-fluid mt-8 text-center">
+  <!-- Row dengan class "row" -->
+  <div class="row">
+      <!-- Kolom untuk gambar di sebelah kiri -->
+      <div class="col-lg-3 g-col-md-12">
+          <img src="/static/assets/images/sayapkiri.png" alt="EPS 1097" class="img-fluid">
+      </div>
 
-                   <span class="selengkapnya" data-target="detail-1">More info  >></span>
-                   <span class="detail" id="detail-1"><p class="fst-italic">Shaka tells Sanji's group about how the giants saved Ohara's books 22 years ago when Dr. Vegapunk met up with Dragon. He also confirms to Robin the identity of their leader. At the scrapyard, Bonney attempts to kill Vegapunk. Meanwhile, a masked assassin approaches Egghead.</p>
-                    <span class="hide" data-target="detail-1">Hide</span>
-                  </span>
-
-              </div>
-              <div class="col-lg-6 g-col-md-12 "style="min-height: 500px;">
-                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="3000">
+      <!-- Kolom untuk carousel -->
+      <div class="col-lg-6 g-col-md-12">
+          <!-- Carousel dengan id "carouselExampleAutoplaying" -->
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+              <!-- Carousel inner -->
+              <div class="carousel-inner">
+                  <!-- Item carousel pertama -->
+                  <div class="carousel-item active" data-bs-interval="3000">
                       <img src="/static/assets/images/crosel1.png" class="d-block w-100" alt="Chapter 1110: Starfall">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="3000">
-                      <img src="/static/assets/images/crosel2.png" class="d-block w-100" alt="Chapter 1109: Interception">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="3000">
-                      <img src="/static/assets/images/crosel3.png" class="d-block w-100" alt="Chapter 1108: Come In, World">
-                    </div>
                   </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
+                  <!-- Item carousel kedua -->
+                  <div class="carousel-item" data-bs-interval="3000">
+                      <img src="/static/assets/images/crosel2.png" class="d-block w-100" alt="Chapter 1109: Interception">
+                  </div>
+                  <!-- Item carousel ketiga -->
+                  <div class="carousel-item" data-bs-interval="3000">
+                      <img src="/static/assets/images/crosel3.png" class="d-block w-100" alt="Chapter 1108: Come In, World">
+                  </div>
               </div>
-              <div class="col-lg-3 g-col-md-12">
-                <img src="/static/assets/images/Vegapunk.webp" class="img-fluid">
-                <p class="fw-semibold">"Dr. Vegapunk" <br></p>
 
-                   <span class="selengkapnya" data-target="detail-2">More info  >></span>
-                   <span class="detail" id="detail-2"><p class="fst-italic">Dr. Vegapunk was the leading scientist of the SSG in the employment of the Marines. His work included discovering the secrets and uses of seastone, the secrets of how Devil Fruit powers work, the co-discovery of the Lineage Factor and its applications, the creation of the Pacifista and Seraphim, and various other scientific achievements that are said to be at least 500 years ahead of current technology.[10][11] He hailed from the technologically advanced Karakuri Island and resided on Egghead, where his laboratory is located.
-                       <span class="hide" data-target="detail-2">Hide</span>
-                   </span>
-              </div>
-            </div>
+              <!-- Tombol carousel sebelumnya -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+              </button>
+
+              <!-- Tombol carousel selanjutnya -->
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+              </button>
           </div>
+      </div>
+      <!-- Kolom untuk gambar di sebelah kanan -->
+      <div class="col-lg-3 g-col-md-12">
+          <img src="/static/assets/images/sayapkanan.png" class="img-fluid">
+      </div>
+  </div>
+</div>
+
+          <!-- ajakan submit-->
+          <hr class="featurette-divider mt-5 mb-5">
+
+          <div class="featurette-container">
+              <div class="row featurette">
+                  <div class="col-md-7">
+                      <h2 class="featurette-heading">Asikin aja, <span class="text-muted">ketahuan pikir belakangan.</span></h2>
+                      <p class="lead">Bergabunglah dengan <strong>Telcomedy!</strong> Tempat kawan-kawan Telkom berbagi dan menikmati meme-meme lucu. Asik-asikan dulu, pikir belakangan! Jangan lewatkan kesempatan untuk tertawa bersama. Yuk, jadikan hari-harimu lebih seru dan penuh canda di <strong>Telcomedy</strong></p>
+                  </div>
+                  <div class="col-md-5">
+                      <img class="featurette-image img-fluid mx-auto" src="/static/assets/images/quotes1.png" alt="Generic placeholder image">
+                  </div>
+              </div>
+          </div>
+          
+          <hr class="featurette-divider mt-5 mb-5">
+          
+          <div class="featurette-container">
+              <div class="row featurette">
+                <div class="col-md-5">
+                  <img class="featurette-image img-fluid mx-auto" src="/static/assets/images/quotes2.png" alt="Generic placeholder image">
+              </div>
+                  <div class="col-md-7">
+                      <h2 class="featurette-heading">Kebabasan perpendapat, <span class="text-muted">asal tahu batas ya adik-adik</span></h2>
+                      <p class="lead"><Strong>Soe Hok Gie</Strong> "Saya memang tak pernah ingin menjadi pohon bambu yang hanya bisa berdiam diri saja. Saya hanya ingin menjadi pohon oak yang berani menentang sesuatu apa pun."</p>
+                  </div>
+              </div>
+          </div>
+          
+          <hr class="featurette-divider mt-5 mb-5">
+
+              <!--ajakan submit-->
         <!--Content Finish-->
 
         <!-- Iklan Start-->

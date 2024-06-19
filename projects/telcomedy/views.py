@@ -89,9 +89,9 @@ def dashboard(request):
         return redirect("/telcomedy/login")
 
 
-def detail(request, berita_id):
+def detail(request, comedy_id):
     template = loader.get_template('detail.html')
-    data = Data_Comedy.objects.filter(id=berita_id)
+    data = Data_Comedy.objects.filter(id=comedy_id)
     context = {
         'title' : 'Detail',
         'data' : data

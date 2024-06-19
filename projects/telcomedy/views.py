@@ -33,29 +33,29 @@ def anime(request):
     }
     return HttpResponse(template.render(context, request))
     
-def characters(request):
-    template = loader.get_template('characters.html')
-    data = Data_Comedy.objects.filter(kategori='characters')
+def random(request):
+    template = loader.get_template('random.html')
+    data = Data_Comedy.objects.filter(kategori='random')
     context = {
-        'kategori' : 'CHARACTERS',
+        'kategori' : 'RANDOM',
         'data' : data
     }
     return HttpResponse(template.render(context, request))
     
-def storyarc(request):
-    template = loader.get_template('storyarc.html')
-    data = Data_Comedy.objects.filter(kategori='storyarc')
+def ittp(request):
+    template = loader.get_template('ittp.html')
+    data = Data_Comedy.objects.filter(kategori='ittp')
     context = {
-        'kategori' : 'STORY ARC',
+        'kategori' : 'ITTP',
         'data' : data
     }
     return HttpResponse(template.render(context, request))
 
-def manga(request):
-    template = loader.get_template('manga.html')
-    data = Data_Comedy.objects.filter(kategori='manga')
+def feeling(request):
+    template = loader.get_template('feeling.html')
+    data = Data_Comedy.objects.filter(kategori='feeling')
     context = {
-        'kategori' : 'MANGA',
+        'kategori' : 'FEELING',
         'data' : data
     }
     return HttpResponse(template.render(context, request))

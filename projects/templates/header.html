@@ -28,7 +28,7 @@
 <div class="">
   <header class="sticky top-0 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6">
     <nav class="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
-      <a class="flex items-center gap-2 text-lg font-semibold md:text-base" href="#">
+      <a class="flex items-center gap-2 text-lg font-semibold md:text-base" href="{% url 'index' %}">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -46,9 +46,6 @@
           <path d="M12 3v6"></path>
         </svg>
         <span class="sr-only">Acme Inc</span>
-      </a>
-      <a class="text-foreground transition-colors hover:text-foreground" href="{% url 'dashboard' %}">
-        Dashboard
       </a>
       <a class="text-muted-foreground transition-colors hover:text-foreground" href="{% url 'feeling' %}">
         Feeling

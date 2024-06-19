@@ -147,8 +147,8 @@ def hapusdata(request, comedy_id):
     except Data_Comedy.DoesNotExist:
         raise Http404("task tidak ditemukan.")
     
-def editdata(request, berita_id):
-    obj = get_object_or_404(Data_Comedy, id = berita_id)
+def editdata(request, comedy_id):
+    obj = get_object_or_404(Data_Comedy, id = comedy_id)
     
     form = DataMeme(request.POST or None, instance= obj)
     if form.is_valid():

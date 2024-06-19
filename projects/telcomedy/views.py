@@ -136,7 +136,7 @@ def logout(request):
         del request.session['email']
     except:
         pass
-    return redirect("/telcomedy/login")
+    return redirect("/")
 
 def hapusdata(request, berita_id):
     try:

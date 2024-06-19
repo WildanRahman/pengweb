@@ -20,7 +20,7 @@ urlpatterns = [
     path('pengguna', views.pengguna, name='pengguna'),
     path('lihatdata', views.lihatdata, name='lihatdata'),
     path('keloladata', views.keloladata, name='keloladata'),
-    path('logout', views.login, name='logout'),
+    path('logout', views.logout, name='logout'),
     path('hapusdata/<int:comedy_id>', views.hapusdata, name='hapusdata'),
     path('ubahdata/<int:comedy_id>', views.editdata, name='ubahdata'),
 ]

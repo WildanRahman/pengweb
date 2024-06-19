@@ -9,6 +9,7 @@
         <script type="text/javascript" src="assets/"></script>
         <script src="{% static 'js/bootstrap.min.js' %}"></script>
         <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
 
         <style>
           .detail {display: none;}
@@ -19,53 +20,51 @@
     </head>
 
     <body>  
-        <!-- Header Start-->
-        <div class="container-fluid">
-            <div class="row">
-              <div class="col-3 text-center bg-success">
-                <img src="/static/assets/images/Logo.png" alt="LOGO" width="300px" height="auto">
-              </div>
-              <div class="col-9 text-center bg-success text-white bg-opacity-75 px-4 fs-1">
-                Welcoming our new Nakamas!
-              </div>
-            </div>
-          </div>
-        <!-- Header Finish-->
+<!--
+// v0 by Vercel.
+// https://v0.dev/t/ijnTOCKC8KQ
+-->
 
-        <!-- Navbar Start-->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary px-4">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="{% url 'login' %}">Login</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a>
-                  </li>
+<div class="">
+  <header class="sticky top-0 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6">
+    <nav class="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
+      <a class="flex items-center gap-2 text-lg font-semibold md:text-base" href="#">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="h-6 w-6"
+        >
+          <path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9Z"></path>
+          <path d="m3 9 2.45-4.9A2 2 0 0 1 7.24 3h9.52a2 2 0 0 1 1.8 1.1L21 9"></path>
+          <path d="M12 3v6"></path>
+        </svg>
+        <span class="sr-only">Acme Inc</span>
+      </a>
+      <a class="text-foreground transition-colors hover:text-foreground" href="#">
+        Dashboard
+      </a>
+      <a class="text-muted-foreground transition-colors hover:text-foreground" href="#">
+        Orders
+      </a>
+      <a class="text-muted-foreground transition-colors hover:text-foreground" href="#">
+        Products
+      </a>
+      <a class="text-muted-foreground transition-colors hover:text-foreground" href="#">
+        Customers
+      </a>
+      <a class="text-muted-foreground transition-colors hover:text-foreground" href="#">
+        Analytics
+      </a>
+    </nav>
 
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="{% url 'manga' %}">Manga</a>
-                    </li>
+  </header>
+</div>          
 
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="{% url 'anime' %}">Anime</a>
-                    </li>
-
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="{% url 'characters' %}">Characters</a>
-                    </li>
-
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="{% url 'storyarc' %}">Story Arcs</a>
-                    </li>
-
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="{% url 'dashboard' %}">Dashboard</a>
-                    </li>
-
-                </ul>
-        </nav>
-        <!-- Navbar Finish-->
-        <div class="col" style="height:20px;"></div>
+    </body>

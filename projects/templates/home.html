@@ -2,7 +2,7 @@
 {% include 'header.html' %}
 
         <!-- Content Start-->
-        <div class="container-fluid text-center bg-success bg-gradient bg-opacity-50" style="min-height:300px;">
+        <div class="container-fluid mt-8 text-center" style="min-height:300px;">
             <div class="row">
               <div class="col-lg-3 g-col-md-12">
                 <img src="/static/assets/images/Eps 1097.jpg" alt="EPS 1097" class="img-fluid">
@@ -14,7 +14,7 @@
                   </span>
 
               </div>
-              <div class="col-lg-6 g-col-md-12 bg-secondary "style="min-height: 500px;">
+              <div class="col-lg-6 g-col-md-12 "style="min-height: 500px;">
                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="3000">
@@ -51,22 +51,8 @@
         <!--Content Finish-->
 
         <!-- Iklan Start-->
-        <div class="container-fluid text-center bg-success-subtle blur">
-            <div class="row">
-              <div class="col">
-                <img src="/static/assets/images/Iklan1.jpg" alt="iklan1" width="300px" height="auto" class="img-thumbnail">
-              </div>
-              <div class="col">
-                <img src="/static/assets/images/Iklan2.jpg" alt="iklan2" width="300px" height="auto" class="img-thumbnail">
-              </div>
-              <div class="col">
-                <img src="/static/assets/images/Iklan3.jpg" alt="iklan3" width="auto" height="300px" class="img-thumbnail">
-              </div>
-              <div class="col">
-                <img src="/static/assets/images/Iklan4.jpg" alt="iklan4" width="300px" height="auto" class="img-thumbnail">
-              </div>
-            </div>
-          </div>
+
+        {% include 'iklan.html' %}
         <!-- Iklan Finish-->
 
 {% include 'footer.html' %}

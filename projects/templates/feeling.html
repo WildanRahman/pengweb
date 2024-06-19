@@ -8,8 +8,22 @@
       <div class="col-6">  <div class="container-fluid text-left bg-body-secondary bg-opacity-50" style="min-height: auto;">
           <div class="row">
             {% for r in data %}
-              <div class="col-12 mb-3">  <img src="assets/{{ r.gambar }}" alt="{{ r.judul }}" class="">
+              <div class="col-12 mb-4">  <img src="assets/{{ r.gambar }}" alt="{{ r.judul }}" class="">
                 <a href="detail/{{ r.id }}"><h6>{{ r.judul }}</h6></a>
+              </div>
+              <div class="container text-center">
+                <div class="row">
+                  <div class="col">
+                        _____________________________
+                  </div>
+                </div>
+              </div>
+              <div class="container text-center">
+                <div class="row">
+                  <div class="col">
+                        .
+                  </div>
+                </div>
               </div>
             {% endfor %}
           </div>

@@ -84,7 +84,7 @@ def dashboard(request):
     if request.session.has_key('email'):
         email = request.session['email']
         nama = request.session['nama']
-        return render(request, "admin/dashboard.html", {"email": email, "nama": nama})
+        return render(request, "dashboard.html", {"email": email, "nama": nama})
     else:
         return redirect("/telcomedy/login")
 

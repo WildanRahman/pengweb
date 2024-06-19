@@ -138,9 +138,9 @@ def logout(request):
         pass
     return redirect("/")
 
-def hapusdata(request, berita_id):
+def hapusdata(request, comedy_id):
     try:
-        berita = Data_Comedy.objects.get(id=berita_id)
+        berita = Data_Comedy.objects.get(id=comedy_id)
         berita.delete()
         return HttpResponse("""<script> alert("data berhasil dihapus"); window.location.href = "/telcomedy/lihatdata"; </script>""")
     

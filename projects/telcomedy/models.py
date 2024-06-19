@@ -3,7 +3,7 @@ import os
 from uuid import uuid4
 
 # Create your models here.
-class Data_Berita(models.Model):
+class Data_Comedy(models.Model):
     id = models.AutoField(primary_key=True)
     judul = models.CharField(max_length=50, blank=True, null=True)
     berita = models.TextField(blank=True, null=True)

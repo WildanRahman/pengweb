@@ -1,9 +1,9 @@
 from django import forms 
 from .models import * 
 
-class DataBerita(forms.ModelForm):
+class DataMeme(forms.ModelForm):
     class Meta:
-        model = Data_Berita
+        model = Data_Comedy
         exclude = ()
         fields = '__all__'
         error_message = {

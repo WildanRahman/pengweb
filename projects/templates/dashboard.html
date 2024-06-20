@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
     <style>
@@ -102,30 +103,38 @@
     </style>
 </head>
 
-<body>
-    <nav>
-        <div class="top">
-            <img src="/static/assets/images/Logo.png" alt="logo">
+<body class="flex flex-col h-screen overflow-hidden bg-green-50">
+    <nav class="w-48 bg-green-700 text-white flex flex-col items-center pt-5 fixed h-full">
+        <div class="top mb-4">
+            <img src="/static/assets/images/Logo.png" alt="logo" class="h-12 mb-2">
         </div>
-        <div class="nav-links">
-            <div class="nav-link-wrapper">
-                <a href="pengguna" class="amenu"><img src="https://img.icons8.com/android/22/ffffff/home.png" alt="Dashboard Icon"><span>Akun Pengguna</span></a>
+        <div class="nav-links w-full">
+            <div class="nav-link-wrapper w-full my-2">
+                <a href="pengguna" class="flex items-center text-white no-underline py-2 px-4 w-full hover:bg-green-500">
+                    <img src="https://img.icons8.com/android/22/ffffff/home.png" alt="Dashboard Icon" class="mr-2"><span>Akun Pengguna</span>
+                </a>
             </div>
-            <div class="nav-link-wrapper">
-                <a href="lihatdata"><img src="https://img.icons8.com/metro/22/ffffff/about.png" alt="Lihat Data Icon"><span>Lihat Data</span></a>
+            <div class="nav-link-wrapper w-full my-2">
+                <a href="lihatdata" class="flex items-center text-white no-underline py-2 px-4 w-full hover:bg-green-500">
+                    <img src="https://img.icons8.com/metro/22/ffffff/about.png" alt="Lihat Data Icon" class="mr-2"><span>Lihat Data</span>
+                </a>
             </div>
-            <div class="nav-link-wrapper">
-                <a href="keloladata"><img src="https://img.icons8.com/metro/22/ffffff/download.png" alt="Kelola Data Icon"><span>Kelola Data</span></a>
+            <div class="nav-link-wrapper w-full my-2">
+                <a href="keloladata" class="flex items-center text-white no-underline py-2 px-4 w-full hover:bg-green-500">
+                    <img src="https://img.icons8.com/metro/22/ffffff/download.png" alt="Kelola Data Icon" class="mr-2"><span>Kelola Data</span>
+                </a>
             </div>
-            <div class="nav-link-wrapper">
-                <a href="logout"><img src="https://img.icons8.com/metro/22/ffffff/export.png" alt="Logout Icon"><span>Logout</span></a>
+            <div class="nav-link-wrapper w-full my-2">
+                <a href="logout" class="flex items-center text-white no-underline py-2 px-4 w-full hover:bg-green-500">
+                    <img src="https://img.icons8.com/metro/22/ffffff/export.png" alt="Logout Icon" class="mr-2"><span>Logout</span>
+                </a>
             </div>
         </div>
     </nav>
-    <div class="navbar">
-        <h1>Administrator</h1>
+    <div class="navbar bg-green-600 py-2 px-4 flex items-center justify-center border-b border-green-800 fixed w-full top-0 left-48 h-16 box-border">
+        <h1 class="text-white text-xl m-0">Administrator</h1>
     </div>
-    <div class="content">
+    <div class="content mt-16 ml-48 p-5 box-border w-[calc(100%-12rem)] h-[calc(100vh-4rem)] overflow-y-auto">
         <!-- Main content goes here -->
     </div>
 </body>
